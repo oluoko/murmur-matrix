@@ -6,7 +6,7 @@ import { GitHubLogin, GoogleLogin, Logout } from "./Buttons";
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
   return (
-    <nav className="flex px-10 justify-between items-center fixed top-0 left-0 w-full h-[65px] bg-black text-white">
+    <nav className="flex px-10 justify-between items-center fixed top-0 left-0 w-full h-[65px] bg-black text-white z-20">
       <h1 className="text-black text-3xl font-bold text-white">
         MurMur<span className="text-teal-500"> Matrix</span>
       </h1>

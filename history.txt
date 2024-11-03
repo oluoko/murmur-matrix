@@ -1,0 +1,999 @@
+  484  sudo gedit emesa-website-git-commit brian-s-portfolio-git-commit
+  485  sudo chmod +x brian-s-portfolio-git-commit
+  486  cd /home/brian/Desktop/Projects/brian-s-portfolio
+  488  echo "# brian-s-portfolio" >> README.md\ngit init\ngit add README.md\ngit commit -m "Brian's Portfolio, reinitialization."\ngit branch -M main\ngit remote add origin https://github.com/oluoko/brian-s-portfolio.git\ngit push -u origin main
+  495  git config --global pull.rebase false\n
+  497  # Open the conflicting files in your editor and resolve the conflicts\ngit add .\ngit commit\n
+  499  git config pull.rebase false\n
+  501  git add frontend/src/components/Blog/Blog.jsx\ngit commit -m "frontend/src/components/Blog/Blog.jsx"\n
+  503  git add .\ngit commit\n
+  505  git stash\n
+  506  brian-s-portfolio-git-commit "frontend - Blog.jsx"
+  509  npm i react-router-dom
+  514  gedit history.txt
+  516  npm i concurrently
+  523  ls Desktop
+  524  ls Desktop/
+  525  cd Dekstop/Projects
+  527  mkdir
+  528  mkdir Projects
+  529  cd Projects/
+  532  mkdir annabelle-mitumba-bales
+  533  cd annabelle-mitumba-bales
+  534  git clone https://github.com/oluoko/annabelle-mitumba-bales.git\n
+  536  rmdir annabelle-mitumba-bales
+  539  code Projects
+  542  rm PythonExcel-git-commit brian-otieno-portfolio-git-commit chat-astrophic-v2-git-commit chat-astrophic-v3-git-commit moi-portal-chatbox-git-commit
+  543  sudo rm -rf  PythonExcel-git-commit brian-otieno-portfolio-git-commit chat-astrophic-v2-git-commit chat-astrophic-v3-git-commit moi-portal-chatbox-git-commit
+  566  moi-portal-chatbox-git-commit
+  569  moi-
+  571  git remote add origin https://github.com/oluoko/moi-university-portal-chatbox.git\n
+  578  V
+  582  git clone https://github.com/oluoko/moi-university-portal-chatbox.git\n
+  589  git clone --depth 1 https://github.com/oluoko/moi-university-portal-chatbox.git\n
+  603  git config --global http.postBuffer 1048576000\n
+  604  git config --global core.compression 0\n
+  605  git clone https://github.com/oluoko/emesa-research-and-consultancy-website.git\n
+  606  git config --global http.lowSpeedLimit 0\ngit config --global http.lowSpeedTime 999999\n
+  607  git clone --depth 1 https://github.com/oluoko/emesa-research-and-consultancy-website.git\n
+  609  code Desktop/Projects/Blitz_tid_bits.___
+  612  sudo rm -rf Blitz_tid_bits.___
+  624  cd careers
+  636  cd blog
+  639  npm i express-
+  640  npm i express-async-handler
+  653  code Downloads/emesa-research-and-consultancy-website/client
+  654  code Downloads/emesa-research-and-consultancy-website
+  657  npm install 
+  658  npm install -D tailwindcss postcss autoprefixer react-router-dom\nnpx tailwindcss init -p\n
+  659  npm ls react
+  660  rm -rf node_modules
+  662  npm i react-image-gallery react-dropzone
+  663  npm install react-dropzone
+  666  npm install multer
+  671  npm install mongodb@latest\n
+  675  emesa-website-git-commit "employeeController.js"
+  676  emesa-website-git-commit "bloggerRoutes.js"
+  678  emesa-website-git-commit "employeeRoutes.js"
+  682  rm -rf node_modules\nnpm cache clean --force\nnpm install\nnpm run dev\n
+  686  kill -9 43001
+  688  kill -9 43708
+  689  lsof -i :5000
+  690  kill -9 58472 59429
+  714  cd clie
+  717  moi-university-portal-chatbox-git-commit 
+  723  moi-university-portal-chatbox-git-commit "Toast.jsx: Changing its position"
+  724  moi-university-portal-chatbox-git-commit "Toast.css: Styling the Toast"
+  729  emesa-website-git-commit "Toast.jsx"
+  730  emesa-website-git-commit "Toast.css"
+  740  sudo dpkg --configure -a
+  742  sudo dpkg -i code_1.92.1-1723066302_amd64.deb
+  743  sudo apt upgrade
+  749  npm i cors body-parser nodemailer
+  750  npm i googleapis
+  752  git pull
+  754  git rm --cached .env
+  756  emesa-website-git-commit ".env.example file update"
+  757  emesa-website-git-commit "server.js"
+  762  sudo apt-get update\nsudo apt-get install curl wget libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6\n
+  763  updateall
+  769  git remote add origin https://github.com/oluoko/brian-s-portfolio.git\n
+  773  git push -f origin main\n
+  776  git fetch --depth=1\ngit pull origin main\n
+  780  emesa-website-git-commit "AttacheeApplicationScreen.jsx"
+  783  emesa-website-git-commit "ProfileScreen.jsx"
+  786  code Desktop/Projects/emesa-research-and-consultancy-website Desktop/Projects/brian-s-portfolio
+  788  code Desktop/Projects/moi-university-portal-chatbox
+  794  git clone --depth 1 https://github.com/oluoko/brian-s-portfolio.git\n
+  796  npm react-icons
+  798  npm i react-icons
+  800  emesa-website-git-commit "index.css: adding the Oswald font"
+  805  code proshop-v2
+  807  code emesa-research-and-consultancy-website && code brian-s-portfolio
+  811  mkdir Codes
+  813  mkdir C#\ Codes ** cd C#\ Codes
+  815  sudo rmdir ** cd
+  818  mkdir C#\ Codes && cd C#\ Codes
+  820  code C\#\ Codes
+  821  gcc Program.cs -o output
+  822  gcc Program.cpp -o output
+  823  g++ Program.cpp -o output
+  824  ./output
+  825  sudo apt install apache2 -y\n
+  827  sudo systemctl start apache2\nsudo systemctl enable apache2\n
+  828  sudo systemctl status apache2\n
+  830  sudo apt install ufw -y
+  831  sudo ufw enable\n
+  832  sudo ufw allow 'Apache Full'\n
+  833  sudo ufw status\n
+  834  sudo rm /var/www/html/index.html
+  835  node -v
+  836  npm -v
+  837  sudo apt install mongodb -y
+  841  code Desktop/Projects/emesa-research-and-consultancy-website && code Desktop/Projects/brian-s-portfolio
+  851  cd Templates
+  853  cd tailwind\ templates
+  855  cod loopple-tailwind-css-profile-dashboard
+  856  code loopple-tailwind-css-profile-dashboard
+  861  npm install nodemailer dotenv\n
+  865  npm outdated
+  866  npm update
+  867  npm upgrade
+  879  diskpart
+  882  git clone https://github.com/oluoko/Codes
+  884  mv C\#\ Codes Codes
+  888  cd Codes
+  892  ls -ls
+  894  code Desktop/Codes
+  895  sudo apt install mono-complete
+  896  wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb\nsudo dpkg -i packages-microsoft-prod.deb\nrm packages-microsoft-prod.deb
+  897  sudo apt-get update && \\n  sudo apt-get install -y dotnet-sdk-8.0
+  900  Codes-git-commit
+  901  code Desktop/Projects/emesa-research-and-consultancy-website
+  912  npm install crypto-browserify\n
+  916  npm install crypto-js\n
+  919  npm update && npm upgrade
+  928  cd frontend/
+  938  npm install vite-plugin-node-polyfills\n
+  940  cd moi-university-portal-chatbox
+  946  cd brian-s-portfolio
+  956  npm install buffer\n
+  957  npm install --save-dev @esbuild-plugins/node-globals-polyfill @esbuild-plugins/node-modules-polyfill buffer\n
+  965  emesa-website-git-commit "postBlog.jsx"
+  967  npm install react-quill\n
+  972  npm i crypto
+  974  em
+  978  npm install nodemailer crypto\n
+  979  emesa-website-git-commit "updating registerUser in userController.js"
+  980  emesa-website-git-commit "adding verifyEmail controller in userController.js"
+  981  emesa-website-git-commit "adding forgotPassword controller in userController.js"
+  982  emesa-website-git-commit "adding resetPassword controller in userController.js"
+  983  emesa-website-git-commit "updated updateUserProfile controller in userController.js"
+  984  emesa-website-git-commit "updating exports in userController.js"
+  985  emesa-website-git-commit "updating imports in userRoutes.js"
+  986  npm install passport passport-google-oauth20\n
+  989  emesa-website-git-commit "creating backend/config/passport.js"
+  992  ifconfig
+  993  sudo service
+  995  gedit ips
+  996  scp -r /home/brian/Videos/Movies\ \&\ Series/Series/The\ Good\ Place username@192.168.43.126:/Users/daisylucy/Movies
+  997  scp -r /home/brian/Videos/Movies\ \&\ Series/Series/The\ Good\ Place daisylucy@192.168.43.126:/Users/daisylucy/Movies
+  999  CD ..
+ 1005  ip a
+ 1007  cd home/brian/Videos/Movies\ \&\ Series/Series/The\ Good\ Place
+ 1009  scp The.Good.Place.S02.COMPLETE.720p.BluRay.x264-GalaxyTV\[TGx\] daisylucy@192.168.43.126:/Users/daisylucy/Movies/
+ 1010  scp -r The.Good.Place.S02.COMPLETE.720p.BluRay.x264-GalaxyTV\[TGx\] daisylucy@192.168.43.126:/Users/daisylucy/Movies/
+ 1011  scp -r The.Good.Place.S03.COMPLETE.720p.BluRay.x264-GalaxyTV\[TGx\] daisylucy@192.168.43.126:/Users/daisylucy/Movies/
+ 1014  scp -r Anime/I\ want\ to\ eat\ your\ pancreas\ 2018 Movies/Migration.2023.720p.WEBRip.800MB.x264-GalaxyRG\[TGx\] Movies/Puss\ In\ Boots\ The\ Last\ Wish\ \(2022\)\ \[720p\]\ \[WEBRip\]\ \[YTS.MX\] daisylucy@192.168.43.126:/Users/daisylucy/Movies/
+ 1015  scp -r Movies/Marriage\ Story Movies/Love.Story.1970.720p.BluRay.999MB.HQ.x265.10bit-GalaxyRG\[TGx\] daisylucy@192.168.43.126:/Users/daisylucy/Movies/
+ 1023  code Desktop/Projects/brian-s-portfolio
+ 1024  code Desktop/Projects/Blitz-tid_bits.
+ 1027  git remote add origin https://github.com/oluoko/https://github.com/oluoko/Blitz-tid_bits..git\n
+ 1028  git remote set-url origin https://github.com/oluoko/Blitz-tid_bits..git\n
+ 1031  git remote add origin https://github.com/oluoko/Blitz-tid_bits..git
+ 1032  git remote set-url origin https://github.com/oluoko/Blitz-tid_bits..git
+ 1033  git push -u origin main\n
+ 1035  ^[[200~git pull origin main
+ 1036  ~
+ 1038  cd Desktop/Projects/Blitz-tid_bits.
+ 1040  git config --global http.postBuffer 157286400\n
+ 1042  sudo apt install xword\n
+ 1043  sudo apt install gnome-sudoku\n
+ 1044  flatpak install flathub org.gnome.Crosswords
+ 1050  sudo dpkg -i code_1.92.2-1723660989_amd64.deb
+ 1051  npm install passport passport-google-oauth20 express-session\n
+ 1053  c m
+ 1054  c matrix
+ 1056  cmatrix
+ 1057  wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+ 1058  sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
+ 1059  sudo apt update\n sudo apt-get install unityhub
+ 1060  ee
+ 1062  sudo apt-get install cheese
+ 1063  emesa-website-git-commit "Updating LoginScreen.jsx: importing AuthContext"
+ 1066  cd Blitz-tid_bits.
+ 1070  git remote set-url origin git@github.com:oluoko/Blitz-tid_bits.git\n
+ 1072  ssh-keygen -t ed25519 -C "brianotieno586@gmail.com"\n
+ 1076  ls -al ~/.ssh\n
+ 1077  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519\n
+ 1078  cat ~/.ssh/id_ed25519.pub\n
+ 1079  ssh -T git@github.com\n
+ 1081  git remote -v\n
+ 1082  git remote set-url origin git@github.com:oluoko/Blitz-tid_bits..git\n
+ 1085  git status\n
+ 1087  git merge origin/main --allow-unrelated-histories\n
+ 1090  git pull --rebase origin main\n
+ 1091  git add .\ngit rebase --continue\n
+ 1096  Blitz_-_tid_bits-git-commit "Updated README.md file again"
+ 1100  sudo fdisk -l
+ 1101  sudo dmesg | grep -i sdb\n
+ 1103  sudo apt-get install smartmontools
+ 1104  sudo smartctl -a /dev/sdb\n
+ 1105  sudo smartctl -x -a /dev/sdb\n
+ 1107  ls Videos/Movies\ \&\ Series/Series
+ 1108  ls Videos/Movies\ \&\ Series/Series >> Documents/Notes/movies.txt
+ 1109  ls Videos/Movies\ \&\ Series/Movies >> Documents/Notes/movies.txt
+ 1110  ls Videos/Movies\ \&\ Series/Anime >> Documents/Notes/movies.txt
+ 1112  sudo apt-get clean\nsudo apt-get autoremove\n
+ 1113  sudo apt-get install ncdu\nsudo ncdu /\n
+ 1114  docker system prune -a\n
+ 1117  npm install googleapis
+ 1118  sudo chmod 777 Desktop
+ 1119  cd Desktop/
+ 1120  sudo chmod 777 GAMEUP\ AFRICA
+ 1121  cd GAMEUP\ AFRICA/
+ 1123  sudo chmod 777 Create\ with\ Code
+ 1126  sudo chmod 777 *
+ 1127  emesa-website-git-commit "Updating LoginScreen.jsx"
+ 1129  emesa-website-git-commit "Updating server.js"
+ 1130  emesa-website-git-commit "Updating RegisterScreen.jsx"
+ 1131  emesa-website-git-commit "Updating PrivateRoute.jsx"
+ 1132  emesa-website-git-commit "Updating AdminRoute.jsx"
+ 1133  emesa-website-git-commit "importing and using AdminRoute and PrivateRoute to main.jsx"
+ 1134  emesa-website-git-commit "updated main.jsx: added AuthProvider inside a Router"
+ 1135  emesa-website-git-commit "updated RegisterScreen.jsx"
+ 1137  emesa-website-git-commit "Added ProfileBtn.jsx Component"
+ 1139  emesa-website-git-commit "updated Navbar.jsx and ProfileBtn.jsx"
+ 1140  emesa-website-git-commit "updated Navbar.jsx, ProfileBtn.jsx and main.jsx"
+ 1141  emesa-website-git-commit "updated ProfileScreen.jsx"
+ 1145  cd Desktop/GAMEUP\ AFRICA/Create\ with\ Code/Prototype\ 1
+ 1148  mv .gitignore .gitignore
+ 1149  mv .gitignore .gitignore2
+ 1150  mv .gitignore2 /home/brian/Desktop/GAMEUP\ AFRICA/Create\ with\ Code
+ 1156  gedit everyday-git-commit Create-with-Code-git-commit
+ 1157  sudo gedit everyday-git-commit Create-with-Code-git-commit
+ 1158  sudo chmod +x Create-with-Code-git-commit
+ 1160  cd home/brian/Desktop/GAMEUP\ AFRICA
+ 1164  ls cd Prototype\ 1
+ 1165  ls -la Prototype\ 1
+ 1166  Create-with-Code-git-commit 
+ 1174  echo "# Create-with-Code" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/Create-with-Code.git\ngit push -u origin main
+ 1176  rmdir Create\ with\ Code
+ 1177  rm -rf Create\ with\ Code
+ 1178  mkdir Create\ with\ Code
+ 1179  cd Create\ with\ Code
+ 1180  echo "# Create with Code" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/Create-with-Code.git\ngit push -u origin main
+ 1182  git push
+ 1190  gedit .gitignore2
+ 1194  mv .gitignore2 Prototype\ 1/
+ 1196  cd Prototype\ 1
+ 1199  mv .gitignore2 .gitignore
+ 1201  gedit .gitignore
+ 1208  Create-with-Code-git-commit "Updating the README.md file"
+ 1211  emesa-website-git-commit "updated main.jsx"
+ 1212  emesa-website-git-commit "Updated PostBlog.jsx"
+ 1213  sudo apt-get remove vlc
+ 1214  sudo apt-get purge vlc
+ 1215  sudo apt-get autoremove
+ 1216  sudo apt-get update -y && sudo apt-get install vlc -y
+ 1217  wget https://zoom.us/client/latest/zoom_amd64.deb\n
+ 1219  sudo apt remove zoom\n
+ 1220  sudo apt purge zoom\n
+ 1221  https://youtu.be/XpXJAOFsIAM
+ 1222  ^[[200~sudo apt autoremove
+ 1223  sudo apt autoremove\n
+ 1224  dpkg -l | grep zoom\n
+ 1226  sudo dpkg -i zoom_amd64.deb
+ 1228  sudo apt-get install -f\n
+ 1229  sudo dpkg -i zoom_amd64.deb\n
+ 1230  zoom --version\n
+ 1237  emesa-website-git-commit "Updated PrivateRoute.jsx"
+ 1239  emesa-website-git-commit "Updated the component Back.jsx"
+ 1240  emesa-website-git-commit "Updated ProfileBtn.jsx"
+ 1242  cd Desktop/GAMEUP\ AFRICA/Create\ with\ Code/
+ 1243  Create-with-Code-git-commit"\n"
+ 1244  Create-with-Code-git-commit
+ 1247  emesa-website-git-commit "Created and initialized EmailVerificationScreen.jsx"
+ 1248  emesa-website-git-commit "Updated EmailVerificationScreen.jsx"
+ 1249  emesa-website-git-commit "Updated main.jsx and RegistrationScreen.jsx"
+ 1260  code geno-safaris-
+ 1261  mkdir geno-safaris-website
+ 1263  npm init
+ 1265  npm i express mongoose concurrently nodemon colors cors
+ 1266  mkdir server client
+ 1267  cd server
+ 1268  touch server.js
+ 1270  rmdir -f client
+ 1271  rm -rf client
+ 1272  npm create vite@latest
+ 1275  npm install tailwindcss postcss autoprefixer\n
+ 1276  npx tailwindcss init -p\n
+ 1277  npm axios react-router-dom react-icons
+ 1278  npm i axios react-router-dom react-icons
+ 1281  geno-safaris-website-git-commit "Updated index.css"
+ 1282  geno-safaris-website-git-commit "Updated package.json in the root folder"
+ 1284  npm i dotenv
+ 1286  npm cookie-parser
+ 1287  npm i cookie-parser
+ 1289  npm i jsonwebtoken
+ 1291  npm i bcryptjs
+ 1294  npm install -D tailwindcss\nnpx tailwindcss init
+ 1303  sudo gedit /usr/local/bin/geno-safaris-v2-git-commit
+ 1304  sudo mv /usr/local/bin/geno-safaris-v2-git-commit /usr/local/bin/geno-safaris-website-git-commit
+ 1305  sudo gedit /usr/local/bin/geno-safaris-website-git-commit
+ 1308  echo "# geno-safaris-website" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/geno-safaris-website.git\ngit push -u origin main
+ 1309  geno-safaris-website-git-commit "Update README.md file"
+ 1319  emesa-website-git-commit "updated userController.js file"
+ 1323  cd geno-safaris-main
+ 1327  code Desktop/Projects
+ 1331  geno-safaris-website-git-commit "Created ScreenSizeContext.jsx file"
+ 1332  geno-safaris-website-git-commit "Updated ScreenSizeContext.jsx file"
+ 1333  geno-safaris-website-git-commit "Updated App.jsx file"
+ 1334  geno-safaris-website-git-commit "Updated Navbar.jsx file"
+ 1336  flatpak install flathub io.github.Figma_Linux.figma_linux\n
+ 1337  ^M
+ 1338  flatpak uninstall io.github.Figma_Linux.figma_linux\n
+ 1340  sudo dpkg -i figma-linux_0.11.4_linux_amd64.deb
+ 1344  npm install aws-sdk\n
+ 1347  code Downloads/geno-safaris-
+ 1350  code tailwind\ templates
+ 1353  cd free-react-tailwind-admin-dashboard
+ 1356  geno-safaris-website-git-commit "Created a 'AdminDashboard' Folder"
+ 1362  geno-safaris-website-git-commit "Updated AdminDashboard.jsx file"
+ 1364  npm i path
+ 1369  cd tailwind-dashboard-template
+ 1372  locate @tailwindConfig
+ 1373  sudo locate @tailwindConfig
+ 1374  sudo su
+ 1375  npm i chart.js
+ 1376  npm i chart-adapter-moment
+ 1377  npm i chartjs-adapter-moment
+ 1378  npm i moment
+ 1379  npm react-flatpickr
+ 1380  npm i  react-flatpickr
+ 1384  npm i react-transition-group
+ 1385  npm react-flatpickr moment chart.js chartjs-adapter-moment
+ 1389  code geno-safaris-website
+ 1392  npm install vite @vitejs/plugin-react-swc\n
+ 1394  sudo dpkg -i Downloads/code_1.93.0-1725459079_amd64.deb
+ 1396  sudo dpkg -i code_1.93.0-1725459079_amd64.deb
+ 1397  sudo systemctl status mongod\n
+ 1401  cp emesa-research-and-consultancy-website/ /home/brian/Desktop/Emesa\ Research\ and\ Consultancy
+ 1405  rm -rf emesa-research-and-consultancy-website
+ 1408  cd Emesa\ Research\ and\ Consultancy
+ 1413  cd Emesa\ Research\ and\ Consultancy/emesa-research-and-consultancy-website
+ 1414  echo "# emesa-research-and-consultancy-website" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/emesaresearch/emesa-research-and-consultancy-website.git\ngit push -u origin main
+ 1419  emesa-website-git-commit "updated server.js file"
+ 1420  emesa-website-git-commit "updated .env.example file"
+ 1423  git clone https://github.com/oluoko/emesa-research-and-consultancy-website
+ 1424  emesa-research-and-consultancy-website
+ 1430  npm i react-flatpickr moment chart.js chartjs-adapter-moment
+ 1433  git pull origin main\n
+ 1437  npm install @tailwindcss/forms\n
+ 1439  emesa-website-git-commit "Updated TermsOfService.jsx and PrivacyPolicy.jsx"
+ 1440  emesa-website-git-commit "Updated README.md file"
+ 1442  cd geno-safaris-website
+ 1445  npm i chart.js chartjs-adapter-moment moment path react-flatpickr react-transition-group
+ 1447  gno-safaris-website-git-commit
+ 1448  geno-safaris-website-git-commit
+ 1451  npm client
+ 1454  cd Desktop/Projects/emesa-research-and-consultancy-website
+ 1455  react-devtools
+ 1456  npm i -g react-devtools
+ 1458  npm install -g react-devtools
+ 1462  npm i gapi-script react-google-login
+ 1463  npm i gapi-script
+ 1464  npm i react-google-login
+ 1465  npm install react-google-login --legacy-peer-deps\n
+ 1468  npm i google-auth-library
+ 1471  emesa-website-git-commit "Created and Upgraded googleAuthController.js"
+ 1472  emesa-website-git-commit "Created and Upgraded googleAuthRoute.js"
+ 1473  emesa-website-git-commit 
+ 1474  emesa-website-git-commit "Updated LoginScreen.jsx"
+ 1478  npm run server
+ 1481  npm outdated\nnpm update\n
+ 1483  cd Desktop/Projects/
+ 1484  git clone https://github.com/tailwindlabs/tailwindcss.com
+ 1486  git config --global http.postBuffer 524288000\n
+ 1487  git clone --depth=1 https://github.com/tailwindlabs/tailwindcss.com\n
+ 1489  cd tailwindcss.com
+ 1495  git pull origin main --rebase\n
+ 1496  git add .\n
+ 1498  git push origin main\n
+ 1500  npm run client
+ 1509  brian-s-portfolio-git-commit "updated Navbar.jsx file"
+ 1510  brian-s-portfolio-git-commit "updated Footer.jsx file"
+ 1516  emesa-website-git-commit "Created and updated GoogleOAuthCallback.jsx"
+ 1517  git branch\n
+ 1518  git checkout main
+ 1519  git pull origin main
+ 1520  git add .
+ 1521  git commit -m "Resolved merge conflicts"\n
+ 1522  git push origin main
+ 1523  git filter-branch --force --index-filter \\n'git rm --cached --ignore-unmatch backend/controllers/googleAuthController.js' \\n--prune-empty --tag-name-filter cat -- --all\n
+ 1524  git add backend/controllers/googleAuthController.js\ngit commit -m "Remove sensitive data from Google OAuth"\n
+ 1526  emesa-website-git-commit "Created and updated googleAuthController.js"
+ 1528  emesa-website-git-commit "Updated GoogleOAuthCallback.jsx"
+ 1530  emesa-website-git-commit "Updated Footer.jsx\n"
+ 1533  emesa-website-git-commit "Copied .env.example file"
+ 1534  emesa-website-git-commit "Updateed .env.example file"
+ 1535  emesa-website-git-commit "Updateed googleAuthController.js file"
+ 1538  emesa-website-git-commit "Updated server.js"
+ 1543  npm i lottie-react framer-motion
+ 1545  emesa-website-git-commit "Updated client/package.json: lottie-react and framer-motion"
+ 1548  emesa-website-git-commit "Updated googleAuthController.js"
+ 1549  emesa-website-git-commit "created and updated utils/upload.js"
+ 1550  emesa-website-git-commit "updated userController.js"
+ 1551  emesa-website-git-commit "updated upload.js"
+ 1553  emesa-website-git-commit "update Footer.jsx"
+ 1554  emesa-website-git-commit "updated Navbar.jsx"
+ 1555  emesa-website-git-commit "updated Footer.jsx"
+ 1556  emesa-website-git-commit "updated Toast.css file"
+ 1558  npm i --save @emailjs/browser
+ 1561  emesa-website-git-commit "updated Toast.jsx file"
+ 1562  emesa-website-git-commit "created and updated ContactUsForm.jsx file"
+ 1564  npm install @emailjs/browse
+ 1565  npm install @emailjs/browser
+ 1566  npm install --save @emailjs/browser
+ 1567  npm install --save @emailjs/browser --legacy-peer-deps\n
+ 1572  emesa-website-git-commit "updated ContactUsForm.jsx file"
+ 1574  npm install smtp.js
+ 1575  emesa-website-git-commit "updated googleAuthController.js file"
+ 1576  emesa-website-git-commit "Updated GoogleOAuthCallback.jsx file"
+ 1577  emesa-website-git-commit "Updated googleAuthController.js file"
+ 1579  emesa-website-git-commit "Created and Updated Error.jsx file"
+ 1580  emesa-website-git-commit "Updated the main.jsx file"
+ 1581  emesa-website-git-commit "Updated the Error.jsx file"
+ 1586  npm run dev\
+ 1593  emesa-website-git-commit "Updated the GoogleOAuthCallback.jsx file"
+ 1596  cd ..e
+ 1598  code Projects/emesa-research-and-consultancy-website
+ 1599  kill -9 5000
+ 1603  emesa-website-git-commit "Created and Updated apiSlice.js, authSlice.js and usersApiSlice.js"
+ 1604  emesa-website-git-commit "Created and Updated store.js"
+ 1606  npm install redux react-redux @reduxjs/toolkit
+ 1607  npm install redux react-redux @reduxjs/toolkit --legacy-peer-deps\n
+ 1608  npm install @react-oauth/google\n
+ 1609  npm install @react-oauth/google\n --legacy-peer-deps
+ 1610  npm install react@17 react-dom@17\n
+ 1611  rm -rf node_modules\nnpm cache clean --force\nnpm install\n
+ 1612  npm install react-redux@8.0.5\n
+ 1613  npm install react@18 react-dom@18\n
+ 1615  npm uninstall react-redux @reduxjs/toolkit redux\n
+ 1620  emesa-website-git-commit "updated userController.js and googleAuthController.js"
+ 1626  npm i @emailjs/browser react-toastify
+ 1639  brian-s-portfolio-git-commit "Updated Nothing.jsx"
+ 1640  emesa-website-git-commit "Created and Updated env\ example.js and updated googleAuthController.js"
+ 1641  emesa-website-git-commit "Updated ProfileScreen.jsx"
+ 1642  emesa-website-git-commit "Updated .env.example file"
+ 1643  emesa-website-git-commit "Updated ProfileScreen.jsx file"
+ 1646  npm i @cloudinary/url-gen @cloudinary/react
+ 1647  npm i @cloudinary/url-gen @cloudinary/react --legacy-peer-deps
+ 1650  npm i cloudinary --legacy-peer-deps
+ 1652  emesa-website-git-commit "Updated userController.js file"
+ 1654  emesa-website-git-commit "Restored ProfileScreen.jsx"
+ 1659  git rebase --continue\n
+ 1660  git rebase --abort
+ 1662  sudo rm -rf emesa-research-and-consultancy-website
+ 1663  git clone --depth=1 https://github.com/oluoko/emesa-research-and-consultancy-website
+ 1666  cd client
+ 1667  npm i
+ 1668  npm install --legacy-peer-deps\n
+ 1670  code ..
+ 1672  code emesa-research-and-consultancy-website
+ 1676  emesa-website-git-commit "Updated userModel.js"
+ 1677  emesa-website-git-commit "Created and updated .readthedocs.yaml"
+ 1678  emesa-website-git-commit "updated .readthedocs.yaml"
+ 1679  CD .
+ 1685  brian-s-portfolio-git-commit "added phone_scroll.json and phone_floating.json"
+ 1687  npm i lottie-react
+ 1689  brian-s-portfolio-git-commit "updated nothing.jsx"
+ 1690  brian-s-portfolio-git-commit "updated Experience.jsx and Experience.css"
+ 1691  cd Desktop
+ 1692  mkdir Frontend\ Masters\ Projects
+ 1694  npx create-next-app@latest mood-journal
+ 1697  code mood-journal
+ 1699  git init\ngit add .\ngit commit -m "Initial commit with create-next-app"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/mood-journal.git\ngit push -u origin main\n
+ 1700  cd Desktop/Frontend\ Masters\ Projects
+ 1703  sudo gedit everyday-git-commit mood-journal-git-commit
+ 1704  sudo chmod +x  mood-journal-git-commit
+ 1706  mood-journal-git-commit "Updated the README.md file"
+ 1708  mood-journal-git-commit "Created and Updated .prettierrc file"
+ 1709  mood-journal-git-commit "Cleared globals.css and page.tsx files"
+ 1710  mood-journal-git-commit "Updated app/page.tsx file"
+ 1711  mood-journal-git-commit "Created and Updated the .env.local file"
+ 1712  npm install @clerk/nextjs
+ 1713  mood-journal-git-commit "Installed @clerk/nextjs"
+ 1714  mood-journal-git-commit "Updated layout.jsx"
+ 1715  mood-journal-git-commit "Created and updated SignInPage and SignUpPage files"
+ 1716  mood-journal-git-commit "Created and updated middleware.ts"
+ 1717  mood-journal-git-commit "Updated .env.local file"
+ 1718  mood-journal-git-commit "Created and Updated new-user/page.tsx file"
+ 1719  mood-journal-git-commit "Updated SignUpPage file"
+ 1724  npm i multer
+ 1726  moi-university-portal-chatbox-git-commit "Updated Model.jsx file"
+ 1727  moi-university-portal-chatbox-git-commit "Created and Updated uploadMiddleware.js  file"
+ 1728  moi-university-portal-chatbox-git-commit "Updated messageRoutes.js  file"
+ 1729  moi-university-portal-chatbox-git-commit "Updated messageModel.js and messageController.js  files"
+ 1732  Blitz_-_tid_bits-git-commit "Created Snake\ Game/index.html"
+ 1734  Blitz_-_tid_bits-git-commit "Updated Snake\ Game/styles.css and script.js"
+ 1736  Blitz_-_tid_bits-git-commit "Updated Snake\ Game/index.html"
+ 1738  Blitz_-_tid_bits-git-commit "Updated Snake\ Game/script.js"
+ 1739  Blitz_-_tid_bits-git-commit "Updated Snake\ Game/styles.css"
+ 1745  npm i @prisma/client prisma --save-dev
+ 1746  npm install -g neonctl
+ 1747  cd Downloads/
+ 1748  sudo dpkg -i mongodb-mongosh_2.3.1_amd64.deb
+ 1749  sudo dpkg -i code_1.93.1-1726079302_amd64.deb
+ 1750  mood-journal-git-commit "installed prisma and @prisma/client"
+ 1755  cd Frontend\ Masters\ Projects
+ 1756  cd mood-journal
+ 1760  sudo add-apt-repository ppa:blender/ppa\nsudo apt-get update\nsudo apt-get install blender\n
+ 1763  code moi-university-portal-chatbox
+ 1764  moi-university-portal-chatbox-git-commit "Updated messageModel.js\"\n\n"
+ 1766  moi-university-portal-chatbox-git-commit "Updated CourseChat.jsx"
+ 1767  moi-university-portal-chatbox-git-commit "Updated ChatBox.jsx"
+ 1768  moi-university-portal-chatbox-git-commit "Updated ChatBox.css"
+ 1769  moi-university-portal-chatbox-git-commit "Updated messageModel.js"
+ 1770  moi-university-portal-chatbox-git-commit "Updated ChatModel.js"
+ 1771  moi-university-portal-chatbox-git-commit "Updated messageController.js"
+ 1773  cd backend
+ 1775  moi-university-portal-chatbox-git-commit
+ 1776  cd frontend
+ 1778  sudo apt install curl
+ 1779  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+ 1780  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list\n
+ 1781  sudo apt update
+ 1782  sudo apt install brave-browser
+ 1784  sudo dpkg -i google-chrome-stable_current_amd64.deb
+ 1787  brian-s-portfolio-git-commit "Updated App.jsx and Navbar.css"
+ 1788  brian-s-portfolio-git-commit "Intialized HomeScreen.jsx"
+ 1789  brian-s-portfolio-git-commit "Moved Blog to Screens"
+ 1790  brian-s-portfolio-git-commit "Renamed Blog.jsx to BlogScreen.jsx"
+ 1791  brian-s-portfolio-git-commit "Moved Nothing to Screens"
+ 1792  brian-s-portfolio-git-commit "Updated HomeScreen.jsx"
+ 1793  brian-s-portfolio-git-commit "Updated HomeScreen.jsx and App.jsx"
+ 1796  moi-university-portal-chatbox-git-commit "Updated ChatControllers.js"
+ 1797  moi-university-portal-chatbox-git-commit "Updated userControllers.js"
+ 1799  code brian-s-portfolio
+ 1802  brian-s-portfolio-git-commit "Updated Navbar.jsx and Footer.jsx"
+ 1806  cd Projects/brian-s-portfolio
+ 1808  brian-s-portfolio-git-commit "Updated Footer.jsx"
+ 1809  brian-s-portfolio-git-commit "Updated App.jsx"
+ 1811  brian-s-portfolio-git-commit "Updated Navbar.jsx and Navbar.css"
+ 1813  cd Desktop/Templates/tailwind\ templates
+ 1818  cd Projects/tailwindcss.com
+ 1821  brian-s-portfolio-git-commit
+ 1822  npm run frontend
+ 1823  cd Desktop/Projects/tailwindcss.com
+ 1824  npm start
+ 1827  brian-s-portfolio-git-commit "Updated Navbar.jsx"
+ 1830  brian-s-portfolio-git-commit "Updated Navbar.css"
+ 1833  code Frontend\ Masters\ Projects/mood-journal/
+ 1834  sudo apt upgrade --fix-missing -y
+ 1835  reboot
+ 1836  npm install -g @neondatabase/cli\n
+ 1837  npm install prisma @prisma/client\nnpm install pg\n
+ 1838  mood-journal-git-commit "installed prisma and @prisma/client and pg"
+ 1839  mood-journal-git-commit "Updated the .env.local.example"
+ 1840  sudo npm install -g @neondatabase/cli\n
+ 1841  npm i -g neonctl
+ 1842  sudo npm i -g neonctl
+ 1845  sudo gedit everyday-git-commit expense-tracker-nextjs-git-commit
+ 1846  sudo chmod +x expense-tracker-nextjs-git-commit
+ 1847  neon -v
+ 1848  neon auth
+ 1849  neon operations
+ 1850  neon orgs list
+ 1851  neon --help
+ 1853  neon branch --help
+ 1854  neon branch create mood-journal dev
+ 1856  neon branch create
+ 1858  neon branch rename br-bold-rice-a7ee7ebl dev
+ 1859  neon connect --help
+ 1860  neon connect dev
+ 1861  neon deploy
+ 1862  neon list
+ 1863  neon branch list
+ 1864  neon branch connect dev
+ 1865  neonctl projects list\n
+ 1866  neonctl branches list --project-id <project_id>\n
+ 1867  neonctl branches list --project-id autumn-pond-41274652
+ 1868  neonctl connect --project-id autumn-pond-41274652 --branch dev
+ 1869  neonctl postgresql://mood-journal_owner:RQDaVTXk1K3r@ep-morning-forest-a7so37ml.ap-southeast-2.aws.neon.tech/mood-journal?sslmode=require --project-id autumn-pond-41274652 --branch dev
+ 1870  neon projects list
+ 1873  mood-journal-git-commit "Initialized prisma"
+ 1874  mood-journal-git-commit "Updated schema.prisma"
+ 1875  npm install @prisma/adapter-neon @neondatabase/serverless ws\nnpm install --save-dev @types/ws
+ 1876  mood-journal-git-commit "Neon serverless driver with Prisma"
+ 1881  npx create-next-app@latest expense-tracker-nextjs
+ 1882  cd expense-tracker-nextjs
+ 1884  expense-tracker-nextjs-git-commit "Cleaning page.tsx file"
+ 1885  expense-tracker-nextjs-git-commit "Updateed globals.css file"
+ 1886  expense-tracker-nextjs-git-commit "Updateed layout.tsx"
+ 1887  expense-tracker-nextjs-git-commit "Added the Database url to a .env file"
+ 1889  npm i prisma --save-dev
+ 1890  expense-tracker-nextjs-git-commit "Installed Prisma"
+ 1892  expense-tracker-nextjs-git-commit "Initializes schema.prisma"
+ 1893  expense-tracker-nextjs-git-commit "updated schema.prisma with User model"
+ 1894  expense-tracker-nextjs-git-commit "updated schema.prisma with Transaction model"
+ 1896  expense-tracker-nextjs-git-commit "Installed @prisma/client and prisma packages"
+ 1898  expense-tracker-nextjs-git-commit "Created migration: user_transaction_model_create"
+ 1899  expense-tracker-nextjs-git-commit "Created and Updated db.ts file"
+ 1901  expense-tracker-nextjs-git-commit "Clerk Authentication Setup"
+ 1902  expense-tracker-nextjs-git-commit "Added Header.tsx to layout.tsx"
+ 1903  expense-tracker-nextjs-git-commit "Updated Header.tsx componenet"
+ 1904  expense-tracker-nextjs-git-commit "Save User To Neon Database"
+ 1905  expense-tracker-nextjs-git-commit "Guest component"
+ 1906  expense-tracker-nextjs-git-commit "AddTransaction component"
+ 1907  expense-tracker-nextjs-git-commit "addTransaction Action"
+ 1908  expense-tracker-nextjs-git-commit "Get & Validate User"
+ 1909  expense-tracker-nextjs-git-commit "React Toastify Setup"
+ 1910  expense-tracker-nextjs-git-commit "Save Transaction to Neon Database"
+ 1911  expense-tracker-nextjs-git-commit "useRef to Clear the From"
+ 1912  expense-tracker-nextjs-git-commit "Balance Component"
+ 1913  expense-tracker-nextjs-git-commit "getUserBalance Action"
+ 1914  expense-tracker-nextjs-git-commit "created lib/util.ts file"
+ 1915  expense-tracker-nextjs-git-commit "addCommas() and twoDP() Utility Functions"
+ 1916  expense-tracker-nextjs-git-commit "addCommas() Utility Function"
+ 1917  expense-tracker-nextjs-git-commit "IncomeExpense component"
+ 1918  expense-tracker-nextjs-git-commit "getIncomeExpense Action"
+ 1919  expense-tracker-nextjs-git-commit "Transaction Type"
+ 1920  expense-tracker-nextjs-git-commit "TransactionList Component"
+ 1921  expense-tracker-nextjs-git-commit "getTransactions Action"
+ 1922  expense-tracker-nextjs-git-commit "TransactionItem Component"
+ 1923  expense-tracker-nextjs-git-commit "Delete Button"
+ 1924  expense-tracker-nextjs-git-commit "deleteTransaction Action"
+ 1925  expense-tracker-nextjs-git-commit "addCommas() and twoDP in IncomeExpense.tsx"
+ 1926  expense-tracker-nextjs-git-commit "prisma postInstall Script"
+ 1927  expense-tracker-nextjs-git-commit "Updated Transaction.ts"
+ 1929  expense-tracker-nextjs-git-commit "updated IncomeExpense.tsx"
+ 1930  expense-tracker-nextjs-git-commit "updated balance.tsx"
+ 1931  expense-tracker-nextjs-git-commit "updated TransactionItem.tsx"
+ 1932  expense-tracker-nextjs-git-commit "updated Ksh instead of $"
+ 1933  npm i react-toastify
+ 1934  echo "# expense-tracker-nextjs" >> README.md\ngit init\ngit add README.md\ngit commit -m "Expense Tracker\(Next.js\): First commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/expense-tracker-nextjs.git\ngit push -u origin main
+ 1935  expense-tracker-nextjs-git-commit
+ 1936  expense-tracker-nextjs-git-commit "Updated README.md file"
+ 1939  sudo rm -rf expense-tracker-nextjs
+ 1940  git clone https://github.com/oluoko/Spend-Sensei_Expense-Tracker
+ 1944  expense-tracker-nextjs-git-commit "Updated styling: Scrollbar"
+ 1945  expense-tracker-nextjs-git-commit "Updated utils.ts"
+ 1946  expense-tracker-nextjs-git-commit "Updated styling"
+ 1947  git merge --help
+ 1948  git merge
+ 1950  git clone https://github.com/sachin0987/happy-birthday-css-app
+ 1951  sudo apt install python3-pip\n
+ 1952  pip3 install pandas numpy\n
+ 1953  sudo apt install python3.12-venv\n
+ 1954  python3 -m venv myenv\n
+ 1955  source myenv/bin/activate\n
+ 1956  pip install pandas numpy\n
+ 1957  Blitz_-_tid_bits-git-commit
+ 1958  code Blitz-tid_bits.
+ 1964  cd Projects/emesa-research-and-consultancy-website
+ 1966  cd Spend-Sensei_Expense-Tracker
+ 1968  npm install
+ 1970  cd emesa-research-and-consultancy-website
+ 1971  npm list react react-dom\n
+ 1972  npm install react react-dom\n
+ 1973  npm
+ 1975  npm i -g vercel
+ 1976  sudo npm i -g vercel
+ 1977  emesa-website-git-commit
+ 1982  npm i @clerk/nextjs
+ 1983  mood-journal-git-commit "Creating a New User"
+ 1984  mood-journal-git-commit "Creating the Journal Page"
+ 1985  mood-journal-git-commit "User Proje Widget"
+ 1987  npm install @heroicons/react\n
+ 1988  mood-journal-git-commit "Responsive Dashboard"
+ 1989  mood-journal-git-commit "Selecting Journal Entries"
+ 1991  sudo apt update\nsudo apt install python3-pandas\n
+ 1992  sudo apt install pipx\n
+ 1993  pipx ensurepath
+ 1994  pipx install jupyterlab
+ 1995  python3 -m venv jupyterlab-env\n
+ 1996  source jupyterlab-env/bin/activate
+ 1997  pip install jupyterlab
+ 1999  pip install notebook
+ 2000  exit
+ 2002  mood-journal-git-commit "New Journal Entry UI"
+ 2003  mood-journal-git-commit "Creating a New Entry"
+ 2004  mood-journal-git-commit "EntryCard Component UI"
+ 2005  mood-journal-git-commit "Creating the Entry Page"
+ 2006  mood-journal-git-commit "Revalidation"
+ 2007  mood-journal-git-commit "Tried Revalidation"
+ 2009  mood-journal-git-commit "Displaying Entry Details"
+ 2010  mood-journal-git-commit "Journal Entry Editor"
+ 2011  mood-journal-git-commit "Updating Journal Entries"
+ 2012  mood-journal-git-commit "Updated editor styling"
+ 2013  npm i react-autosave
+ 2014  mood-journal-git-commit "Autosaving Entries"
+ 2015  mood-journal-git-commit "Dashboard"
+ 2016  npm i framer-motion
+ 2017  mood-journal-git-commit "Shiny Button using framer-motion"
+ 2018  mood-journal-git-commit "Sidebar UI"
+ 2019  mood-journal-git-commit "LLMs & Prompts"
+ 2020  npm install openai
+ 2021  npm i langchain
+ 2023  npm install langchain openai\n
+ 2024  npm update langchain
+ 2025  npm i langchain-openai
+ 2026  pip i langchain-openai
+ 2027  pip install langchain-openai
+ 2028  sudo pip install langchain-openai
+ 2029  npm i openai-api
+ 2030  mood-journal-git-commit "OpenAI Setup"
+ 2031  npm install langchain\nnpm install openai dotenv
+ 2032  npm i langchain @langchain/core
+ 2033  npm i @langchain/openai 
+ 2034  mood-journal-git-commit "langchain installation"
+ 2036  pip install pandas\n
+ 2037  pandas
+ 2038  python3 -m venv ~/myenv\n
+ 2041  pip install jupyterlab\n
+ 2042  jupyter-lab
+ 2043  source ~/myenv/bin/activate\n
+ 2045  deactivate
+ 2046  clear
+ 2047  python3 s1-ex1a-challenge.py
+ 2048  pip install scikit-learn
+ 2049  history >> history.txt
+ 2050  code /home/brian/Desktop/Frontend\ Masters\ Projects/
+ 2051  code PHP\ Basics
+ 2053  cp PHP\ Basics PHP-Basics
+ 2054  cd PHP-Basics
+ 2056  ls -la
+ 2057  echo "# PHP-Basics" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/PHP-Basics.git\ngit push -u origin main
+ 2059  sudo apt update && sudo apt upgrade -y\n
+ 2060  sudo apt install php libapache2-mod-php php-cli php-mysql php-curl php-xml php-mbstring php-zip php-bcmath -y\n
+ 2061  php -v
+ 2065  sudo chmod +x PHP-Basics-git-commit
+ 2067  sudo gedit mood-journal-git-commit SVG-Essentials-git-commit
+ 2068  sudo chmod +x SVG-Essentials-git-commit
+ 2070  sudo gedit mood-journal-git-commit PHP-Basics-git-commit
+ 2071  cd /home/brian/Desktop/Frontend\ Masters\ Projects/PHP-Basics
+ 2072  PHP-Basics-git-commit
+ 2073  cd playground
+ 2074  php playground/test.php
+ 2076  mkdir SVG\ Essentials\ &\ Animation
+ 2078  sudo rm -rf SVG\ Essentials\ 
+ 2079  mkdir SVG-Essentials
+ 2080  code SVG-Essentials
+ 2081  echo "# SVG-Essentials" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/SVG-Essentials.git\ngit push -u origin main
+ 2082  SVG-Essentials-git-commit
+ 2083  code /home/brian/Desktop/Projects/Blitz-tid_bits.
+ 2084  Blitz_-_tid_bits-git-commit "CSS Scrolling"
+ 2085  code /home/brian/Desktop/Frontend\ Masters\ Projects/SVG-Essentials
+ 2086  cd Desktop/Projects
+ 2087  npx create-next-app@latest Comfycation-Station --typescript --tailwind -esling
+ 2088  npx create-next-app@latest Comfycation-Station --typescript --tailwind -eslint
+ 2089  npx create-next-app@latest comfycation-station --typescript --tailwind -eslint
+ 2090  npx create-next-app@latest comfycation-station
+ 2094  sudo rm rf .
+ 2095  sudo rm rf *
+ 2096  sudo rm -rf *
+ 2099  cd..
+ 2103  rm -rf comfycation-station
+ 2104  mkdir comfycation-station
+ 2106  npx create-next-app@latest .  --typescript --tailwind -eslint
+ 2107  npx create-next-app@latest . --typescript --tailwind --eslint
+ 2108  npx shadcn-ui@latest init
+ 2109  npx shadcn@latest init\n
+ 2112  sudo gedit mood-journal-git-commit comfycation-station-git-commit
+ 2113  sudo chmod +x comfycation-station-git-commit
+ 2114  echo "# comfycation-station" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/comfycation-station.git\ngit push -u origin main
+ 2116  comfycation-station-git-commit "Inital Commit"
+ 2117  comfycation-station-git-commit "Cleaning Up page.tsx"
+ 2118  comfycation-station-git-commit "Updated README.md"
+ 2119  npx shadcn@latest add button\n
+ 2120  comfycation-station-git-commit "Shadcn Button"
+ 2121  mood-journal-git-commit
+ 2123  comfycation-station-git-commit
+ 2124  comfycation-station-git-commit "Logo"
+ 2125  comfycation-station-git-commit "The NavBar.tsx component"
+ 2126  npx shadcn@latest add input\n
+ 2128  comfycation-station-git-commit "SearchInput component"
+ 2129  comfycation-station-git-commit "Upated logo"
+ 2130  npm install next-themes\n
+ 2131  npx shadcn@latest add dropdown-menu\n
+ 2132  comfycation-station-git-commit "DarkMode"
+ 2133  comfycation-station-git-commit "NavMenu Compenent"
+ 2137  code /home/brian/Desktop/Introduction\ to\ Data\ Science\ with\ Python/Exercises/
+ 2142  code /home/brian/Desktop/Projects/Spend-Sensei_Expense-Tracker
+ 2143  mood-journal-git-commit "Icons and Logos"
+ 2145  expense-tracker-nextjs-git-commit "Icons and Logos"
+ 2146  expense-tracker-nextjs-git-commit "Website Logo"
+ 2147  expense-tracker-nextjs-git-commit "Logo Component"
+ 2148  expense-tracker-nextjs-git-commit "TransactionItem Styling"
+ 2150  expense-tracker-nextjs-git-commit "Styling"
+ 2152  expense-tracker-nextjs-git-commit "TransactionItem Filter"
+ 2153  expense-tracker-nextjs-git-commit "TransactionItem Filter styling"
+ 2154  git-commit "Added No. of Transactions"
+ 2155  git-commit "TransactionList Styling"
+ 2157  cd /usr/local/bin
+ 2158  gedit mood-journal-git-commit
+ 2159  sudo rm -rf Blitz_-_tid_bits-git-commit emesa-website-git-commit Codes-git-commit everyday-git-commit
+ 2160  sudo rm -rf Create-with-Code-git-commit expense-tracker-nextjs-git-commit Hyperplexed-git-commit SVG-Essentials-git-commit PHP-Basics-git-commit annabelle-mitumba-bales-git-commit brian-s-portfolio-git-commit comfycation-station-git-commit geno-safaris-website-git-commit moi-university-portal-chatbox-git-commit my-journal-git-commit
+ 2161  mv mood-journal-git-commit git-commit
+ 2162  sudo mv mood-journal-git-commit git-commit
+ 2164  sudo gedit git-commit
+ 2168  cd /home/brian/Desktop/Projects/comfycation-station
+ 2170  git-commit "Delete Images"
+ 2171  npx shadcn@latest add form
+ 2172  git-commit "Form Schema in Zod"
+ 2173  git-commit "Form Field"
+ 2174  npx shadcn@latest add textarea
+ 2175  npx shadcn@latest add checkbox
+ 2176  git-commit "AddHotelForm.tsx component"
+ 2177  npm install uploadthing @uploadthing/react\n
+ 2178  git-commit "Installed Uploadthing"
+ 2179  git-commit "UPLOADTHING_SECRET and UPLOADTHING_TOKEN"
+ 2180  git-commit "Uploadthing core.ts file"
+ 2181  git-commit "Uploadthing core.ts file update"
+ 2182  git-commit "Uploadthing route.ts file"
+ 2183  git-commit "updated tailwind.config.ts"
+ 2184  git-commit "uploadthing.ts"
+ 2185  git-commit "Add Image Uploader"
+ 2186  npx shadcn@latest add toast
+ 2187  npx shadcn@latest add image
+ 2188  git-commit "Add Image Variant"
+ 2189  git-commit "Configure Remote Patterns"
+ 2190  npm i axios
+ 2191  git-commit "Deleting Images"
+ 2195  git-commit "Creating Consistent Propmts"
+ 2196  npm i zond
+ 2197  npm i zod
+ 2198  git-commit "Installing zod"
+ 2199  npm i -S lanchain 
+ 2200  npm i -S langchain 
+ 2201  git-commit "Structured Output with Zod\n:\n"
+ 2202  git-commit "Prompt Template"
+ 2204  npm i @langchain/openai @langchain/core
+ 2205  npm install langchain
+ 2206  \nnpm install langchain\n\nnpm install --save-dev @types/langchain\n
+ 2207  git-commit "Testing the Prompt Template"
+ 2208  npm i --save-dev prisma@latest                       │\n│    npm i @prisma/client@latest
+ 2209  npm i --save-dev prisma@latest @prisma/client@latest
+ 2210  git-commit "Saving Analysis to Database"
+ 2211  git-commit "Connecting the Sidebar UI"
+ 2214  git-commit "Adding Analysis Data to Entry"
+ 2215  git-commit "Revalidation & Client State Management"
+ 2216  git-commit "Added Logo to Navigation bar"
+ 2217  git-commit "Navigation"
+ 2218  npm install @testing-library/jest-dom --save-dev\n
+ 2219  npm install jsdom --save-dev\n
+ 2220  npx vitest\n
+ 2222  git-commit "Mocking Fuctions & Testing Homepage"
+ 2223  git-commit "Dashboard Icons"
+ 2224  git-commit "finilising the styling"
+ 2225  git-commit "Creator Image"
+ 2226  git-commit "Creator component"
+ 2227  git-commit "Entrycard Changes"
+ 2231  npm test
+ 2232  git-commit "Updated 'get started' button"
+ 2233  git-commit "Updated README.md"
+ 2235  git-commit "Ignore build errors"
+ 2240  git-commit "Header styling"
+ 2242  npm i country-state-city
+ 2243  git-commit "Installed country-state-city"
+ 2244  git-commit "useLocation.ts hook"
+ 2245  git-commit "updated .eslintrc.json"
+ 2246  git-commit "updated useLocation.ts hook"
+ 2247  npx shadcn@latest add select\n
+ 2249  git-commit "Select Location"
+ 2250  cd Desktop/riciclo
+ 2251  sudo apt update && sudo apt install unrar -y\n
+ 2252  unrar x riciclo-1.rar
+ 2254  code /home/brian/Desktop/Frontend\ Masters\ Projects/PHP-Basics/HP-Basics
+ 2255  code /home/brian/Desktop/Frontend\ Masters\ Projects/PHP-Basics
+ 2258  cp mood-journal /home/brian/Desktop/Projects
+ 2259  cp mood-journal/ /home/brian/Desktop/Projects
+ 2260  cp /mood-journal /home/brian/Desktop/Projects
+ 2261  git-commit "Update README.md"
+ 2262  git push origin main --force\n
+ 2263  ls
+ 2264  git remote set-url origin https://github.com/oluoko/the-thought-terminal.git
+ 2265  echo "# The Thought Terminal" >> README.md\ngit init\ngit add README.md\ngit commit -m "The Thought Terminal: First Commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/the-thought-terminal.git\ngit push -u origin main
+ 2266  git remote =v
+ 2267  git remote -v
+ 2268  git-commit "Updated layout.tsx"
+ 2272  git-commit "removed prisma migrations"
+ 2274  git-commit "Initialized prisma"
+ 2277  git-commit "Created the migrations"
+ 2278  git-commit "Upgraded the gpt model to gpt-4o-mini"
+ 2279  git-commit "Upgrated Question.tsx"
+ 2281  code /home/brian/Desktop/Frontend\ Masters\ Projects/moo
+ 2283  git-commit "Added frontend-museum files"
+ 2284  git-commit "Renamed cryptomasters to crypto-masters"
+ 2285  cd frontend-museum/
+ 2286  php -S localhost:5000
+ 2287  git-commit "Using PHP in a Client Application"
+ 2288  git-commit "Displaying Dynamic Data"
+ 2289  code /home/brian/Desktop/Projects/the-thought-terminal
+ 2291  git-commit "Updated prompt in ai.ts"
+ 2292  git-commit "Updated textarea placeholder"
+ 2294  git-commit "Updated the tooltip"
+ 2295  grep -r "console.log"
+ 2296  grep -r --exclude-dir={node_modules,.next,coverage,build,out} "console.log" .
+ 2297  git-commit "Removed console.log"
+ 2298  git-commit "Styling"
+ 2299  git-commit "Styling EntryCard.tsx and JournalFilter.tsx"
+ 2301  git-commit "Styling JournalFilter.tsx and JournalPage"
+ 2304  git-commit "Styling Editor.tsx"
+ 2306  git-commit "Styling JournalFilter.tsx"
+ 2307  git-commit "Styling DashboardLayout"
+ 2308  vlc
+ 2309  cd Downloads
+ 2310  chmod +x xampp-linux-x64-8.0.30-0-installer.run
+ 2311  sudo ./xampp-linux-x64-8.0.30-0-installer.run
+ 2312  git-commit "Completed Delete Entry Functionality"
+ 2313  git-commit "Date Updated Functionality"
+ 2314  git-commit "journal/page.tsx"
+ 2315  npm i @tanstack/react-query
+ 2322  npx generate
+ 2325  code /home/brian/Desktop/Frontend\ Masters\ Projects/mood-journal
+ 2326  git-commit "Updated ai.ts"
+ 2327  git-commit "EntryCard.tsx styling"
+ 2328  git-commit "Styling parts of the app"
+ 2329  git-commit "Styling creator/page.tsx"
+ 2330  npx prisma migrate dev --name "add-createdAt-to-journalEntry"\n
+ 2332  git-commit "Fixing the new entry functionality"
+ 2333  git-commit "EntryCard Styling"
+ 2335  git-commit "Updating analysis createdAt"
+ 2338  git-commit "migrations"
+ 2340  git-commit "Major Update\nStyling compenents to look better\nAdding delete entry functionality\nAdding updated date on entry functionality which also update the createdAt of its analysis so that they match"
+ 2341  git-commit "Properly renamed DeleteConfirmation.tsx"
+ 2342  git-commit "Updated Question.tsx"
+ 2345  git-commit "View Hotel Button"
+ 2347  cd /home/brian/Desktop/Frontend\ Masters\ Projects/mood-journal
+ 2350  cd Projects
+ 2351  mkdir brian-oluoko
+ 2352  cd brian-oluoko
+ 2353  echo "# brian-oluoko" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/brian-oluoko.git\ngit push -u origin main
+ 2355  git-commit "Initialized main files"
+ 2356  git-commit "Updated index.html & styles.css"
+ 2357  git-commit "Added Images to the project"
+ 2358  git-commit "Styling h1 and h2"
+ 2359  git-commit "Updating styles and elements in  index.html"
+ 2360  git-commit "Styling Screens"
+ 2361  git-commit ""
+ 2366  git-commit "Dialog box"
+ 2368  git-commit "Styling the Dialog box"
+ 2371  git-commit "AddRoomForm"
+ 2372  git-commit "Styling Scrollbars"
+ 2373  git-commit "AddRoomForm.tsx"
+ 2374  npx prisma studio
+ 2379  git-commit "Completed Delete and Update functionalities on RoomCard.tsx"
+ 2381  mkdir pawn-hub
+ 2382  cd pawn-hub
+ 2383  echo "# pawn-hub" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/oluoko/pawn-hub.git\ngit push -u origin main
+ 2384  npx create-next-app@latest next-js
+ 2388  git-commit "Initialized the next-js app"
+ 2389  cd next-js/public
+ 2390  git clone https://github.com/FrontendCodingYT/coding-projects/tree/b5320623b71bdae479797677c3eed556af61c3b1/reactjs-projects/chess-app/src/assets/images
+ 2392  git-commit "Added the pieces pngs"
+ 2393  git-commit "Clean Up"
+ 2394  git-commit "Chessboard.tsx component"
+ 2395  git-commit "Ignoring Unused Variables"
+ 2396  git-commit "Spawning the ChessBoard"
+ 2397  cd next-js
+ 2400  cd comfycation-station
+ 2403  cd Frontend\ Masters\ Projects/mood-journal
+ 2405  git-commit "getHotels actions"
+ 2406  git-commit "Hotel list"
+ 2407  git-commit "HotelCard Component"
+ 2408  git-commit "HotelCard Component, Styling"
+ 2410  code /home/brian/Desktop/Projects/comfycation-station
+ 2411  systemctl start bluetooth
+ 2412  npm run dev
+ 2413  cd ..
+ 2414  npx create-next-app@latest murmur-matrix
+ 2415  cd murmur-matrix
+ 2416  code .
+ 2417  git-commit "Stripe Payment intent setup"
+ 2418  git-commit "Book room component"
+ 2420  npm i -D prisma
+ 2421  npm i -D prisma --legacy-peer-deps
+ 2423  git-commit "Initialization Updates"
+ 2424  npx prisma push
+ 2425  npx prisma db push
+ 2427  prisma generate
+ 2430  npx prisma init
+ 2431  npx prisma generate
+ 2432  npx prisma migrate dev
+ 2434  git-commit "Login and Logout Buttons"
+ 2435  npm i lucide-react
+ 2436  npm i lucide-react --legacy-peer-deps
+ 2437  npm i react-icons --legacy-peer-deps
+ 2438  git-commit
