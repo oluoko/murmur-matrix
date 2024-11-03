@@ -1,9 +1,29 @@
-const Navbar = () => {
+import { getServerSession } from "next-auth";
+import { authOptions } from "../lib/auth";
+import Image from "next/image";
+
+const Navbar = async () => {
+  const session = await getServerSession(authOptions);
   return (
-    <nav className="flex px-10 justify-between fixed top-0 left-0 w-full bg-white">
-      <h1>
-        MurMur<span> Matrix</span>
+    <nav className="flex px-10 justify-between items-center fixed top-0 left-0 w-full h-[65px] bg-black text-white">
+      <h1 className="text-black text-3xl font-bold text-white">
+        MurMur<span className="text-teal-500"> Matrix</span>
       </h1>
+
+      {session ? (
+        <div className="flex items-center ">
+          <Image
+            src={session.user?.image as string}
+            alt="user profile photo"
+            className="size-12 rounded-full mr-3"
+            width={50}
+            height={50}
+          />
+          <button>Logout</button>
+        </div>
+      ) : (
+        <button>Login</button>
+      )}
     </nav>
   );
 };
