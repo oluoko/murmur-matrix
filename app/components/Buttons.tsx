@@ -53,7 +53,7 @@ export function MainGoogleLogin() {
   return (
     <button
       onClick={() => signIn("google")}
-      className="w-full flex items-center justify-center gap-2 rounded-lg bg-red-500 text-white px-2 md:px-4 py-1 md:py-3 text-center text-sm font-semibold  ring-red-300 transition duration-100 hover:bg-red-600 md:text-base"
+      className="w-full flex items-center justify-center gap-2 rounded-lg bg-red-500 text-white px-2 md:px-4 py-1 md:py-3 text-center text-sm font-semibold  ring-red-300 transition duration-100 hover:bg-red-600 md:text-base my-2"
     >
       Login with Google <FaGoogle className="size-8" />
     </button>
