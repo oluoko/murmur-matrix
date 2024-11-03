@@ -1,12 +1,14 @@
 "use client";
 
+import { GithubIcon } from "lucide-react";
 import { signIn, signOut } from "next-auth/react";
+import { FaGoogle } from "react-icons/fa";
 
 export function Logout() {
   return (
     <button
-      onClick={() => signOut}
-      className="flex items-center justify-center gap-2 rounded-lg bg-red-500 text-white px-3 md:px-5 py-1 md:py-3 text-center text-sm font-semibold  ring-red-300 transition duration-100 hover:bg-red-600 md:text-base"
+      onClick={() => signOut()}
+      className="flex items-center justify-center gap-2 rounded-lg bg-red-500 text-white px-2 md:px-4 py-1 md:py-3 text-center text-sm font-semibold  ring-red-300 transition duration-100 hover:bg-red-600 md:text-base"
     >
       Logout
     </button>
@@ -17,9 +19,10 @@ export function GitHubLogin() {
   return (
     <button
       onClick={() => signIn("github")}
-      className="flex items-center justify-center gap-2 rounded-lg bg-blue-500 text-white px-3 md:px-5 py-1 md:py-3 text-center text-sm font-semibold  ring-blue-300 transition duration-100 hover:bg-blue-600 md:text-base"
+      className="flex items-center justify-center gap-2 rounded-lg bg-blue-500 text-white px-2 md:px-4 py-1 md:py-3 text-center text-sm font-semibold  ring-blue-300 transition duration-100 hover:bg-blue-600 md:text-base"
     >
-      Login with GitHub
+      Login
+      <GithubIcon className="size-4" />
     </button>
   );
 }
@@ -28,9 +31,31 @@ export function GoogleLogin() {
   return (
     <button
       onClick={() => signIn("google")}
-      className="flex items-center justify-center gap-2 rounded-lg bg-red-500 text-white px-3 md:px-5 py-1 md:py-3 text-center text-sm font-semibold  ring-red-300 transition duration-100 hover:bg-red-600 md:text-base"
+      className="flex items-center justify-center gap-2 rounded-lg bg-red-500 text-white px-2 md:px-4 py-1 md:py-3 text-center text-sm font-semibold  ring-red-300 transition duration-100 hover:bg-red-600 md:text-base"
     >
-      Login with Google
+      Login <FaGoogle className="size-4" />
+    </button>
+  );
+}
+
+export function MainGithubLogin() {
+  return (
+    <button
+      onClick={() => signIn("github")}
+      className="w-full flex items-center justify-center gap-2 rounded-lg bg-blue-500 text-white px-2 md:px-4 py-1 md:py-3 text-center text-sm font-semibold  ring-blue-300 transition duration-100 hover:bg-blue-600 md:text-base"
+    >
+      Login with GitHub <GithubIcon className="size-8" />
+    </button>
+  );
+}
+
+export function MainGoogleLogin() {
+  return (
+    <button
+      onClick={() => signIn("google")}
+      className="w-full flex items-center justify-center gap-2 rounded-lg bg-red-500 text-white px-2 md:px-4 py-1 md:py-3 text-center text-sm font-semibold  ring-red-300 transition duration-100 hover:bg-red-600 md:text-base"
+    >
+      Login with Google <FaGoogle className="size-8" />
     </button>
   );
 }
