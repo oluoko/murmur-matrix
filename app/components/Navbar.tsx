@@ -1,6 +1,7 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "../lib/auth";
 import Image from "next/image";
+import { GitHubLogin, GoogleLogin, Logout } from "./Buttons";
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
@@ -19,10 +20,13 @@ const Navbar = async () => {
             width={50}
             height={50}
           />
-          <button>Logout</button>
+          <Logout />
         </div>
       ) : (
-        <button>Login</button>
+        <div className="flex items-center justify-between gap-2 md:gap-4">
+          <GitHubLogin />
+          <GoogleLogin />
+        </div>
       )}
     </nav>
   );
