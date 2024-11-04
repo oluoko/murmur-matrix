@@ -11,7 +11,7 @@ export default async function Chat() {
   }
 
   return (
-    <div className="h-screen bg-gray-200 flex flex-col relative">
+    <div className="h-[calc(100vh-120px)] bg-gray-200 flex flex-col relative">
       <Form />
     </div>
   );

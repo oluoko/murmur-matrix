@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <NextAuthProvider>
           <Navbar />
-          <main> {children}</main>
+          <main className="max-h-[calc(100vh - 65px)]"> {children}</main>
         </NextAuthProvider>
       </body>
     </html>

@@ -24,7 +24,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   };
 
   return (
-    <div className="h-[calc(100vh-65px)] w-screen relative flex mt-[50px] pt-[5px]">
+    <div className="w-screen relative flex mt-[50px] pt-[5px]">
       <aside
         className={`${
           isSidebarOpen ? "w-[27%] md:w-[170px]" : "w-[10%] md:w-[5%]"
@@ -50,18 +50,18 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           ))}
         </ul>
       </aside>
-      <div className="flex-1 flex flex-col h-full">
+      <div className="flex-1 flex flex-col">
         <header className="p-2 md:p-4 h-[60px] border-b border-slate-400/30 flex items-center justify-between">
           <div
-            className="h-full flex items-center justify-end"
+            className="flex items-center justify-end"
             onClick={toggleSidebar}
           >
             <Bars3Icon className="w-6 md:w-8 h-6 md:h-8 cursor-pointer" />
           </div>
-          <div className="px-0 md:px-6 h-full flex items-center justify-end"></div>
+          <div className="px-0 md:px-6 flex items-center justify-end"></div>
         </header>
 
-        <div className="flex-1 overflow-y-auto overflow-x-hidden  h-full">
+        <div className="flex-1 overflow-y-auto overflow-x-hidden">
           {children}
         </div>
       </div>
