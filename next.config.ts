@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
       "googleusercontent.com",
     ],
   },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "1mb",
+      allowedOrigins: ["*"],
+    },
+  },
 };
 
 export default nextConfig;

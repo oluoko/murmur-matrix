@@ -15,5 +15,13 @@ export async function postData(formData: FormData) {
       message: message as string,
       email: session?.user?.email,
     },
+    include: {
+      User: {
+        select: {
+          name: true,
+          image: true,
+        },
+      },
+    },
   });
 }
