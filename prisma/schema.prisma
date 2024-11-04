@@ -43,6 +43,20 @@ model Session {
   @@map("sessions")
 }
 
+model User {
+  id            String    @id @default(uuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime? @map("email_verified")
+  image         String?
+
+  accounts Account[]
+  sessions Session[]
+  messages Message[]
+
+  @@map("users")
+}
+
 model VerificationToken {
   identifier String
   token      String
@@ -53,80 +67,90 @@ model VerificationToken {
 }
 
 model Message {
-  id          String      @id @default(cuid())
-  content     String? // For text messages
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime    @updatedAt
-  senderId    String
-  chatId      String
-  messageType MessageType
-  url         String? // For links, documents, media files, etc.
-  mediaType   MediaType? // For specifying the type of media (e.g., image, audio, video)
+  id      String  @id @default(uuid())
+  message String
+  User    User?   @relation(fields: [email], references: [email])
+  email   String?
 
-  sender User @relation(fields: [senderId], references: [id], onDelete: Cascade, name: "MessageSender")
-  chat   Chat @relation(fields: [chatId], references: [id], onDelete: Cascade)
-
-  @@map("messages")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
-model Chat {
-  id           String     @id @default(cuid())
-  createdAt    DateTime   @default(now())
-  updatedAt    DateTime   @updatedAt
-  isGroup      Boolean    @default(false)
-  messages     Message[]
-  participants User[]     @relation("UserChats")
-  groupChat    GroupChat?
+// model Message {
+//   id          String      @id @default(cuid())
+//   content     String? // For text messages
+//   createdAt   DateTime    @default(now())
+//   updatedAt   DateTime    @updatedAt
+//   senderId    String
+//   chatId      String
+//   messageType MessageType
+//   url         String? // For links, documents, media files, etc.
+//   mediaType   MediaType? // For specifying the type of media (e.g., image, audio, video)
 
-  @@map("chats")
-}
+//   sender User @relation(fields: [senderId], references: [id], onDelete: Cascade, name: "MessageSender")
+//   chat   Chat @relation(fields: [chatId], references: [id], onDelete: Cascade)
 
-model GroupChat {
-  id          String   @id @default(cuid())
-  name        String
-  description String?
-  image       String? // Group profile picture
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+//   @@map("messages")
+// }
 
-  chatId  String @unique
-  adminId String // User who is the admin of the group
+// model Chat {
+//   id           String     @id @default(cuid())
+//   createdAt    DateTime   @default(now())
+//   updatedAt    DateTime   @updatedAt
+//   isGroup      Boolean    @default(false)
+//   messages     Message[]
+//   participants User[]     @relation("UserChats")
+//   groupChat    GroupChat?
 
-  chat  Chat @relation(fields: [chatId], references: [id], onDelete: Cascade)
-  admin User @relation(fields: [adminId], references: [id], onDelete: Cascade, name: "GroupAdmin")
+//   @@map("chats")
+// }
 
-  @@map("group_chats")
-}
+// model GroupChat {
+//   id          String   @id @default(cuid())
+//   name        String
+//   description String?
+//   image       String? // Group profile picture
+//   createdAt   DateTime @default(now())
+//   updatedAt   DateTime @updatedAt
 
-model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime? @map("email_verified")
-  image         String?
+//   chatId  String @unique
+//   adminId String // User who is the admin of the group
 
-  accounts   Account[]
-  sessions   Session[]
-  messages   Message[]   @relation("MessageSender")
-  chats      Chat[]      @relation("UserChats")
-  groupChats GroupChat[] @relation("GroupAdmin")
+//   chat  Chat @relation(fields: [chatId], references: [id], onDelete: Cascade)
+//   admin User @relation(fields: [adminId], references: [id], onDelete: Cascade, name: "GroupAdmin")
 
-  @@map("users")
-}
+//   @@map("group_chats")
+// }
 
-enum MessageType {
-  TEXT
-  LINK
-  DOCUMENT
-  IMAGE
-  VOICE_NOTE
-  AUDIO
-  VIDEO
-}
+// model User {
+//   id            String    @id @default(cuid())
+//   name          String?
+//   email         String?   @unique
+//   emailVerified DateTime? @map("email_verified")
+//   image         String?
 
-enum MediaType {
-  IMAGE
-  AUDIO
-  VIDEO
-  DOCUMENT
-}
+//   accounts   Account[]
+//   sessions   Session[]
+//   messages   Message[]   @relation("MessageSender")
+//   chats      Chat[]      @relation("UserChats")
+//   groupChats GroupChat[] @relation("GroupAdmin")
+
+//   @@map("users")
+// }
+
+// enum MessageType {
+//   TEXT
+//   LINK
+//   DOCUMENT
+//   IMAGE
+//   VOICE_NOTE
+//   AUDIO
+//   VIDEO
+// }
+
+// enum MediaType {
+//   IMAGE
+//   AUDIO
+//   VIDEO
+//   DOCUMENT
+// }
