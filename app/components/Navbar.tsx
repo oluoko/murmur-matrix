@@ -6,8 +6,8 @@ import { GitHubLogin, GoogleLogin, Logout } from "./Buttons";
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
   return (
-    <nav className="flex px-10 justify-between items-center fixed top-0 left-0 w-full h-[60px] bg-black text-white z-20">
-      <h1 className="text-black text-3xl font-bold text-white">
+    <nav className="flex px-2 md:px-10 justify-between items-center fixed top-0 left-0 w-full h-[60px] bg-black text-white z-20">
+      <h1 className="text-lg md:text-2xl font-bold text-white">
         MurMur<span className="text-teal-500"> Matrix</span>
       </h1>
 
@@ -16,7 +16,7 @@ const Navbar = async () => {
           <Image
             src={session.user?.image as string}
             alt="user profile photo"
-            className="size-12 rounded-full mr-3"
+            className="size-8 md:size-10   rounded-full mr-3"
             width={50}
             height={50}
           />

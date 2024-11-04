@@ -43,18 +43,6 @@ model Session {
   @@map("sessions")
 }
 
-model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime? @map("email_verified")
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
-
-  @@map("users")
-}
-
 model VerificationToken {
   identifier String
   token      String
@@ -62,4 +50,83 @@ model VerificationToken {
 
   @@unique([identifier, token])
   @@map("verification_tokens")
+}
+
+model Message {
+  id          String      @id @default(cuid())
+  content     String? // For text messages
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  senderId    String
+  chatId      String
+  messageType MessageType
+  url         String? // For links, documents, media files, etc.
+  mediaType   MediaType? // For specifying the type of media (e.g., image, audio, video)
+
+  sender User @relation(fields: [senderId], references: [id], onDelete: Cascade, name: "MessageSender")
+  chat   Chat @relation(fields: [chatId], references: [id], onDelete: Cascade)
+
+  @@map("messages")
+}
+
+model Chat {
+  id           String     @id @default(cuid())
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  isGroup      Boolean    @default(false)
+  messages     Message[]
+  participants User[]     @relation("UserChats")
+  groupChat    GroupChat?
+
+  @@map("chats")
+}
+
+model GroupChat {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  image       String? // Group profile picture
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  chatId  String @unique
+  adminId String // User who is the admin of the group
+
+  chat  Chat @relation(fields: [chatId], references: [id], onDelete: Cascade)
+  admin User @relation(fields: [adminId], references: [id], onDelete: Cascade, name: "GroupAdmin")
+
+  @@map("group_chats")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime? @map("email_verified")
+  image         String?
+
+  accounts   Account[]
+  sessions   Session[]
+  messages   Message[]   @relation("MessageSender")
+  chats      Chat[]      @relation("UserChats")
+  groupChats GroupChat[] @relation("GroupAdmin")
+
+  @@map("users")
+}
+
+enum MessageType {
+  TEXT
+  LINK
+  DOCUMENT
+  IMAGE
+  VOICE_NOTE
+  AUDIO
+  VIDEO
+}
+
+enum MediaType {
+  IMAGE
+  AUDIO
+  VIDEO
+  DOCUMENT
 }
