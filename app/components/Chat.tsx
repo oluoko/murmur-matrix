@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Pusher from "pusher-js";
 
 interface iAppProps {
   data: {
@@ -17,13 +18,27 @@ interface iAppProps {
 const ChatComponent = ({ data }: iAppProps) => {
   const [messages, setMessages] = useState(data);
 
-  // Function to get day of the week from date string
+  const pusher = new Pusher(process.env.NEXT_PUBLIC_PUSHER_KEY as string, {
+    cluster: "mt1",
+  });
+
+  const channel = pusher.subscribe("my-channel");
+  channel.bind(
+    "my-event",
+    function (data: {
+      message: string;
+      user: { name: string; image: string | null };
+      createdAt: string;
+    }) {
+      alert(JSON.stringify(data));
+    }
+  );
+
   const getDay = (date: string) => {
     const newDate = new Date(date);
     return newDate.toLocaleString("en-US", { weekday: "long" });
   };
 
-  // Function to get the time in the format HH:MM AM/PM from date string
   const getTime = (date: string) => {
     const newDate = new Date(date);
     return newDate.toLocaleString("en-US", {
