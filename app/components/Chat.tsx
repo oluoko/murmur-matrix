@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Pusher from "pusher-js";
 
 interface iAppProps {
@@ -17,22 +17,31 @@ interface iAppProps {
 
 const ChatComponent = ({ data }: iAppProps) => {
   const [messages, setMessages] = useState(data);
+  const messageEndRef = useRef<HTMLInputElement>(null);
 
-  const pusher = new Pusher(process.env.NEXT_PUBLIC_PUSHER_KEY as string, {
-    cluster: "mt1",
-  });
+  useEffect(() => {
+    const pusher = new Pusher(process.env.NEXT_PUBLIC_PUSHER_KEY as string, {
+      cluster: "mt1",
+    });
 
-  const channel = pusher.subscribe("my-channel");
-  channel.bind(
-    "my-event",
-    function (data: {
-      message: string;
-      user: { name: string; image: string | null };
-      createdAt: string;
-    }) {
-      alert(JSON.stringify(data));
-    }
-  );
+    const channel = pusher.subscribe("chat");
+    channel.bind(
+      "messaging",
+      function (data: {
+        message: string;
+        user: { name: string; image: string | null };
+        createdAt: string;
+      }) {
+        const parsedMessages = JSON.parse(data.message);
+
+        setMessages((prev) => [...prev, parsedMessages]);
+      }
+    );
+
+    return () => {
+      pusher.unsubscribe("chat");
+    };
+  }, []);
 
   const getDay = (date: string) => {
     const newDate = new Date(date);
@@ -47,6 +56,14 @@ const ChatComponent = ({ data }: iAppProps) => {
       hour12: true,
     });
   };
+
+  const scrollToBottom = () => {
+    messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
 
   return (
     <div className="p-2 flex-grow max-h-full overflow-y-auto py-32">
@@ -91,6 +108,7 @@ const ChatComponent = ({ data }: iAppProps) => {
             </div>
           );
         })}
+        <div ref={messageEndRef} />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
 import { getServerSession } from "next-auth";
 import { prisma } from "./lib/db";
 import { authOptions } from "./lib/auth";
+import Pusher from "pusher";
 
 export async function postData(formData: FormData) {
   "use server";
@@ -23,5 +24,17 @@ export async function postData(formData: FormData) {
         },
       },
     },
+  });
+
+  const pusher = new Pusher({
+    appId: process.env.PUSHER_APP_ID || "",
+    key: process.env.NEXT_PUBLIC_PUSHER_KEY,
+    secret: process.env.PUSHER_SECRET,
+    cluster: "mt1",
+    useTLS: true,
+  });
+
+  pusher.trigger("chat", "messaging", {
+    message: `${JSON.stringify(data)}\n\n`,
   });
 }
